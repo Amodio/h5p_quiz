@@ -1,7 +1,7 @@
 # h5p_quiz
 Get the questions/answers from a H5P quiz.
 
-# How?
+## How?
 Copy/paste this into your console (F12) from (for example) [module1 eval](https://www.drsd.defense.gouv.fr/lhabilitation-secret-defense-quizz-n1-3) or [module2 eval](https://www.drsd.defense.gouv.fr/les-informations-et-supports-classifies-quizz-n2-1) :
 ```
 var myWindow = window.open("", "", "width=800,height=600");
@@ -16,9 +16,9 @@ for (const question of JSON.parse(H5PIntegration.contents[Object.keys(H5PIntegra
 ```
 
 ## Notes
-Now.. this website generates a PDF via "dompdf 1.0.2 + CPDF"...
+We could print directly the two required codes as they are transmitted in plaintext (tests in javascript, client side).
 
-This package was released two years ago (the 8th of January, in 2021) and a few critical CVE are public:
+Now.. this website generates a PDF via "dompdf 1.0.2 + CPDF". This package was released two years ago (the 8th of January, in 2021) and a few critical CVE are public:
 * https://github.com/dompdf/dompdf/wiki/Securing-dompdf#previously-disclosed-vulnerabilities
 * https://positive.security/blog/dompdf-rce
 * https://tantosec.com/blog/cve-2022-41343/
@@ -28,4 +28,5 @@ This package was released two years ago (the 8th of January, in 2021) and a few 
 * https://huntr.dev/bounties/a6da5e5e-86be-499a-a3c3-2950f749202a/
 * https://github.com/dompdf/dompdf/releases
 
-Also, we could print directly the two required codes as they are transmitted in plaintext (tests in javascript, client side).
+## Disclaimer
+The contents of this document are provided for general information only, do not try to exploit anything but your own machine.
